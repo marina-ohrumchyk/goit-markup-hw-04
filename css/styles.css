@@ -151,6 +151,13 @@ body {
 }
 
 /* hero */
+/* .overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hero.jpg);
+} */
 
 .section-hero {
   padding-top: 200px;
@@ -158,6 +165,16 @@ body {
   text-align: center;
 
   background-color: var(--footer-color);
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
