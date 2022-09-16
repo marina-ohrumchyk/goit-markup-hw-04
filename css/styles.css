@@ -150,14 +150,18 @@ body {
   color: var(--link-color);
 }
 
-/* hero */
-/* .overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../img/hero.jpg);
+/* .icon {
+  margin-right: 10px;
+  fill: var(--card-text-color);
+}
+.icon:hover,
+.icon:focus {
+  fill: var(--link-color);
+}
+.icon-envelope {
+  margin-right: 10px;
 } */
+/* hero */
 
 .section-hero {
   padding-top: 200px;
@@ -243,10 +247,39 @@ body {
 }
 
 .item-features {
+  display: block;
+  max-width: 270px;
+
   margin-right: 30px;
 }
 .item-features:last-child {
   margin-right: 0;
+}
+
+.item-features::before {
+  content: '';
+  display: block;
+  height: 120px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-fon-team);
+}
+
+.icon-antenna::before {
+  background-image: url(../img/specifics/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../img/specifics/clock.svg);
+}
+
+.icon-diagrama::before {
+  background-image: url(../img/specifics/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../img/specifics/astronaut.svg);
 }
 
 .title {
