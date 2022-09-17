@@ -26,9 +26,9 @@
   --color-footer-link: rgba(255, 255, 255, 0.6);
 }
 
-/* * {
+* {
   outline: 1px solid tomato;
-} */
+}
 
 h1,
 h2,
@@ -133,9 +133,10 @@ body {
 }
 
 .contacts-link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
   font-weight: 500;
   font-size: 14px;
@@ -150,6 +151,11 @@ body {
   color: var(--link-color);
 }
 
+.contacts-link:hover svg,
+.contacts-link:focus svg {
+  fill: var(--color-active);
+}
+
 /* .icon {
   margin-right: 10px;
   fill: var(--card-text-color);
@@ -157,10 +163,14 @@ body {
 .icon:hover,
 .icon:focus {
   fill: var(--link-color);
-}
-.icon-envelope {
-  margin-right: 10px;
 } */
+
+.icon-envelope,
+.icon-smartphone {
+  fill: var(--card-text-color);
+  margin-right: 10px;
+}
+
 /* hero */
 
 .section-hero {
