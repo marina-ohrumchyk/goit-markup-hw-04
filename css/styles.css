@@ -24,6 +24,7 @@
   --color-box-shadow: rgba(0, 0, 0, 0.15);
   --color-text-shadow: rgba(0, 0, 0, 0.25);
   --color-footer-link: rgba(255, 255, 255, 0.6);
+  --color-border-customers: #afb1b8;
 }
 
 * {
@@ -266,6 +267,14 @@ body {
   margin-right: 0;
 }
 
+.icon-features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-fon-team);
+  margin-bottom: 30px;
+}
+/* 
 .item-features::before {
   content: '';
   display: block;
@@ -290,7 +299,7 @@ body {
 
 .icon-astronaut::before {
   background-image: url(../img/specifics/astronaut.svg);
-}
+} */
 
 .title {
   margin-bottom: 10px;
@@ -332,6 +341,18 @@ body {
 }
 
 /* team */
+.team-item-social {
+  display: flex;
+  margin-top: 16px;
+}
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
 .team {
   margin-bottom: 50px;
 }
@@ -347,6 +368,7 @@ body {
   border-radius: 0px;
 }
 .conteiner-title {
+  width: 270px;
   padding: 30px 61px;
   text-align: center;
 }
@@ -384,7 +406,64 @@ body {
   color: var(--card-text-color);
 }
 
+/* customer */
+
+.customer {
+  margin-bottom: 50px;
+}
+.customer-list {
+  display: flex;
+  justify-content: space-between;
+}
+.customers-team {
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 1px solid var(--color-border-customers);
+  border-radius: 4px;
+}
+
+/* .customers-team {
+  margin-right: 30px;
+}
+.customers-team:last-child {
+  margin-right: 0;
+} */
+
 /* footer */
+
+.foter-conteiner {
+  display: flex;
+  align-items: baseline;
+}
+
+.conteiner-address {
+  margin-right: 70px;
+}
+.icon-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--hero-color);
+}
+
+.icon-list-footer {
+  display: flex;
+}
+.icon-footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
 
 .footer {
   padding-top: 60px;
@@ -460,6 +539,9 @@ body {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .item-work:nth-last-child(-n + 3) {
